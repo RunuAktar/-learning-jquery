@@ -1,0 +1,82 @@
+body {
+ 
+
+
+
+
+
+
+
+
+
+
+h2{
+		background-color: lightblue;
+		text-align: center;
+	}
+	  #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color:white  ;
+            border: solid 1px green;
+            color:#6C0417;
+        }
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+
+
+
+       #pane2, #flip2 {
+                padding: 5px;
+                text-align: center;
+                background-color:;
+                border: solid 1px green;
+                color:;
+            }
+            #pane2 {
+                padding: 50px;
+            }   
+        #pane3, #flip3 {
+            padding: 5px;
+            text-align: center;
+            background-color:#D7BDE2 
+ ;
+            border: solid 1px green;
+            color: red;
+        }
+        #pane3 {
+            padding: 50px;
+            display: none;
+        }
+        button{
+        	background-color:#5A0505 ;
+        	border-radius: 30%;
+        	border: 1px solid blue;
+        	color: white;
+        	padding: 10px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

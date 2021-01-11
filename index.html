@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jequery</title>
+<script type="text/javascript" src="my.js"></script>	
+
+ <link rel="stylesheet" href="style.css">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link rel="shortcut icon" type="images/png" href="icon\favicon.ico"></head>
+<link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+</head>
+<body style="background-color:#491201   ;">
+    <div class=container style="background-color: ">
+        
+<h1 style="font-family: 'Galada', cursive;
+}">এক নজরে জেকুয়েরি শিখি-পার্ট ১<h1>
+  <h2 style="color: pink;">জেকুয়েরি ইভেন্ট মেথড-</h2>
+<h2>জেকুয়েরি ইভেন্ট মেথড--click()</h2>  
+
+ <p id=p1>আপনি যদি আমার উপরে ক্লিক করেন, তাহলে আমি অদৃশ্য হয়ে যাবো।</p>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script>  
+ $(document).ready(function(){
+        $("#p1").click(function(){
+            $(this).hide();
+        });
+    });
+   </script>
+<h2>জেকুয়েরি ইভেন্ট মেথড--dblclick()</h2> 
+
+ <p id=p4>এটিতে ডাবল-ক্লিক করলে, এটি অদৃশ্য হয়ে যাবে।</p>
+  
+
+<script>
+  $(document).ready(function(){
+      $("#p4").dblclick(function(){
+          $(this).hide();
+      });
+  });
+  </script>
+<h2>জেকুয়েরি ইভেন্ট মেথড--mouseenter()</h2>
+<p id="p5">লা~ইলা-হা ইল্লাল্ল-হু মুহাম্মাদুর রসূলুল্ল-হ্‌।</p>
+ <script>
+  $(document).ready(function(){
+      $("#p5").mouseenter(function(){
+          alert("আপনি প্যারাগ্রাফের মধ্যে মাউস পয়েন্টার প্রবেশ করিয়েছেন এবং কালেমা পড়েছেন!");
+      });
+  });
+  </script>
+
+<h2>জেকুয়েরি ইভেন্ট মেথড--mouseleave()</h2>
+ <p id="p6">লা~ইলা-হা ইল্লাল্ল-হু মুহাম্মাদুর রসূলুল্ল-হ্‌।</p>
+
+ <script>
+  $(document).ready(function(){
+      $("#p6").mouseleave(function(){
+          alert("বিদায়!কালেমা পড়ে আপনি প্যারাগ্রাফের মধ্য থেকে মাউস পয়েন্টার সরিয়ে নিয়েছেন!");
+      });
+  });
+  </script>
+
+<h2>জেকুয়েরি ইভেন্ট মেথড--mousedown()</h2>
+ <p id="p7">লা~ইলা-হা ইল্লাল্ল-হু মুহাম্মাদুর রসূলুল্ল-হ্‌।-- এর অর্থ জানতে এই লেখটিতেই ক্লিক করুন</p>
+
+ <script>
+  $(document).ready(function(){
+      $("#p7").mousedown(function(){
+          alert("আল্লাহ্ ছাড়া কোন সত্য উপাস্য নাই, মুহাম্মাদ[টীকা ১] তার প্রেরিত রসূল।");
+      });
+  });
+  </script>
+
+<h2>জেকুয়েরি ইভেন্ট মেথড--mouseup()</h2>
+ <p id="p8">আশ্‌হাদু আল-লা-ইলা-হা ইল্লাল্লা-হু ওয়াহ্‌দাহু-লা-শারীকালাহু ওয়া আশ্‌হাদু আন্না মুহাম্মাদান আ'বদুহু ওয়া রাসূলুহু।</p>
+
+ <script>
+  $(document).ready(function(){
+      $("#p8").mouseup(function(){
+          alert("প্যারাগ্রাফ এলিমেন্টের উপর প্রেসকৃত মাউস বাটন ছেড়ে দেয়া হয়েছে!");
+      });
+  });
+  </script>
+  <h2>জেকুয়েরি ইভেন্ট মেথড--hover()</h2>
+<p id="p9">হে আল্লাহ নিশ্চয়, ক্ষমা চাই শিরক করা থেকে (আল্লাহর সাথে কাউকে শরিক করা), আমি ক্ষমা চাই সকল পাপ থেকে যা সম্পর্কে আমি সচেতন নই বা জানি না, আমি পুনরায় ঘোষণা করছি, আমি সকল প্রকার কুফর থেকে, শিরক থেকে, মিথ্যা (কথা বলা), গিবত (কারও অনুপস্থিতিতে পরনিন্দা), বিদাত, পরনিন্দা, অশ্লীলতা এবং অন্যান্য সকল পাপ থেকে মুক্ত। আমি ইসলাম স্বীকার এবং বিশ্বাস করি এবং ঘোষণা দিচ্ছি যে, আল্লাহ‌ ছাড়া কোন প্রভু নেই এবং মুহাম্মদ আল্লাহর প্রেরিত রাসুল।</p>
+ <script>
+  $(document).ready(function(){
+      $("#p9").hover(function(){
+          alert("স্বাগতম! আপনি প্যারাগ্রাফে প্রবেশ করেছেন!");
+      },
+      function(){
+          alert("বিদায়! প্যারাগ্রাফ থেকে বের হয়ে গেছেন!");
+      });
+  });
+  </script>
+ <h2>জেকুয়েরি ইভেন্ট মেথড--focus() এলিমেন্টে focus ইভেন্টটি সম্পন্ন হলে অর্থাৎ ব্যবহারকারী ইনপুট ফিল্ডে ফোকাস করলে  এলিমেন্টের ব্যাকগ্রাউন্ড-কালার পরিবর্তন হবেঃ and blur()  এলিমেন্টে blur ইভেন্টটি সম্পন্ন হলে অর্থাৎ ব্যবহারকারী ইনপুট ফিল্ডে ফোকাস হারালে  এলিমেন্টের ব্যাকগ্রাউন্ড-কালার পরিবর্তন হবেঃ</h2>
+ নামঃ <input type="text" name="name"><br>
+ জন্ম তাং- <input type="text" name="birthdate">
+
+
+জাতীয়তা  : <input type="text" name="nationality"><br>
+ইমেইলঃ <input type="text" name="email"> দেশ : <input type="text" name="country"><br>
+ ঠিকানাঃ <input type="text" name="name">
+<script>
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color", "blue");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color", "green");
+  });
+});
+</script>
+  <h2>জেকুয়েরি ইফেক্ট</h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<p id=p10>If you click on me, I will disappear./আপনি যদি আমার উপরে ক্লিক করেন, তাহলে আমি অদৃশ্য হয়ে যাবো।</p>
+
+
+<script>
+$(document).ready(function(){
+  $("#p10").on("click", function(){
+    $(this).hide();
+  });
+});
+</script>
+
+
+
+
+
+<h2>hide() এবং show() মেথড-1</h2>
+ <p id=p2>আপনি যদি "হাইড" বাটনে ক্লিক করেন, তাহলে আমি লুকিয়ে যাবো।</p>
+        <button id="hide">হাইড</button>
+        <button id="show">শো</button>
+<script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("#p2").hide(1500);
+            });
+            $("#show").click(function(){
+                $("#p2").show(1500);
+            });
+        });
+        </script>
+  <h2>hide() এবং show() মেথড-2</h2>      
+<p id="p11">If you click on the "Hide" button, I will disappear.</p>
+​
+<button id="hide1">Hide</button>
+<button id="show1">Show</button>
+<script>
+$(document).ready(function(){
+  $("#hide1").click(function(){
+    $("#p11").hide();
+    $("#hide1").hide();
+  });
+  $("#show1").click(function(){
+    $("#p11").show();
+     $("#hide1").show();
+  });
+});
+</script>
+<h2>toggle() মেথড</h2>
+  <button id=tg>প্যারাগ্রাফ হাইড এবং প্রদর্শনীর জন্য টোগল করুন</button>
+        <p class=p3>রিযিক বৃদ্ধির ছয়টি আধ্যাত্মিক উপায়</p>
+        <p class=p3>১। তাক্বওয়া   ২। তাওয়াক্কুল   ৩। দান-সদকা   ৪। কৃতজ্ঞতা ৫। ইস্তিগফার  ৬। পারিবারিক বন্ধন দৃঢ় করা </p>
+
+
+<script>
+        $(document).ready(function(){
+            $("#tg").click(function(){
+                $(".p3").toggle("slow");
+            });
+        });
+        </script>
+<h2>fadeIn() মেথড</h2>
+ <p>বিভিন্ন প্যারামিটারসহ fadeIn() মেথড দেখানো হলো।</p>
+        <button id=boxbtn>বক্সগুলোতে ফেইড-ইন যুক্ত করার জন্য ক্লিক করুন</button><br><br>
+        <div id="box1" style="width:100px;height:110px;display:none;background-color:aqua;"></div><br>
+        <div id="box2" style="width:100px;height:110px;display:none;background-color:blue;"></div><br>
+        <div id="box3" style="width:100px;height:110px;display:none;background-color:teal;"></div>
+
+  <script>
+        $(document).ready(function(){
+            $("#boxbtn").click(function(){
+                $("#box1").fadeIn();
+                $("#box2").fadeIn("slow");
+                $("#box3").fadeIn(3000);
+            });
+        });
+        </script>
+
+    <h2>fadeOut() মেথড</h2>
+ <p>বিভিন্ন প্যারামিটারসহ fadeOut() মেথড দেখানো হলো।</p>
+        <button id=btn1>বক্সগুলোতে ফেইড-আউট যুক্ত করার জন্য ক্লিক করুন</button><br><br>
+        <div id="yellowbox" style="width:100px;height:110px;background-color:yellow;"></div><br>
+        <div id="redbox" style="width:100px;height:110px;background-color:red;"></div><br>
+        <div id="aquabox" style="width:100px;height:110px;background-color:aqua;"></div>
+
+  <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#yellowbox").fadeOut();
+                $("#redbox").fadeOut("slow");
+                $("#aquabox").fadeOut(3000);
+            });
+        });
+        </script>
+ <h2>fadeToggle() মেথড</h2>
+ <p>বিভিন্ন স্পিড প্যারামিটারসহ fadeToggle() মেথড দেখানো হলো।</p>
+        <button id=btn2>বক্সগুলোকে ফেইড ইন/আউট করার জন্য ক্লিক করুন</button><br><br>
+        <div id="bluebox" style="width:100px;height:110px;background-color:pink;"></div><br>
+        <div id="greenbox" style="width:100px;height:110px;background-color:teal;"></div><br>
+        <div id="pinkbox" style="width:100px;height:110px;background-color:blue;"></div>
+
+ <script>
+        $(document).ready(function(){
+            $("#btn2").click(function(){
+                $("#bluebox").fadeToggle();
+                $("#greenbox").fadeToggle("slow");
+                $("#pinkbox").fadeToggle(3000);
+            });
+        });
+        </script>
+
+<h2>fadeTo() মেথড-মেথডের মধ্যে আবশ্যক opacity প্যারামিটার একটি রেঞ্জ যেমন- 0 এবং 1 এর মধ্যবর্তী মান দিয়ে কোনো এলিমেন্টকে স্পষ্ট/অস্পষ্ট করে।</h2>
+ <p>বিভিন্ন প্যারামিটারসহ fadeTo() মেথড দেখানো হলো।</p>
+        <button id=btn3>বক্স ফেইড করার জন্য এখানে ক্লিক করুন</button><br><br>
+        <div id="boxa" style="width:100px;height:110px;background-color:yellow;"></div><br>
+        <div id="boxb" style="width:100px;height:110px;background-color:teal;"></div><br>
+        <div id="boxc" style="width:100px;height:110px;background-color:red;"></div>
+<script>
+        $(document).ready(function(){
+            $("#btn3").click(function(){
+                $("#boxa").fadeTo("slow", 0.15);
+                $("#boxb").fadeTo("slow", 0.4);
+                $("#boxc").fadeTo("slow", 0.7);
+            });
+        });
+        </script>
+
+<h2>জেকুয়েরি ইফেক্ট - স্লাইডিং</h2>
+<h2>জেকুয়েরি slideDown() মেথড</h2>
+<div id="flip">ছবি দেখতে বা স্লাইড ডাউন প্যানেলে যেতে ক্লিক করুন।</div>
+        <div id="panel"><img src="images/ac.jpg"></div>
+
+ <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideDown("slow");
+            });
+        });
+        </script> 
+
+<h2>জেকুয়েরি slideUp() মেথড</h2>
+ <div id="flip2">কার্ডটি লুকাতে বা প্যানেলকে উপরে স্লাইড করার জন্য ক্লিক করুন</div>
+        <div id="pane2"><img src="images/10.jpg" style="width: 60%;height: 350px;"></div>
+         <script>
+        $(document).ready(function(){
+            $("#flip2").click(function(){
+                $("#pane2").slideUp("slow");
+            });
+        });
+        </script> 
+<h2>জেকুয়েরি slideToggle() মেথড</h2>
+ <div id="flip3">নিচে অথবা উপরে স্লাইড করার জন্য প্যানেলে ক্লিক করুন</div>
+        <div id="panel3"><img src="images/vv.gif" style="width: 80%;height:400px;"></div>
+ <script>
+        $(document).ready(function(){
+            $("#flip3").click(function(){
+                $("#panel3").slideToggle("slow");
+            });
+        });
+        </script>
+<h2>জেকুয়েরি ইফেক্ট - এনিমেশন</h2>
+
+     <div id=panel2 style="background:black;height:10px;width:10%;position:absolute;"><img src="images/dc.jpg" style="width:80% ;height:60px;"></div>
+<button id=btn4>এনিমেশন শুরু করুন</button>
+       
+         
+       
+<script>
+        $(document).ready(function(){
+            $("#btn4").click(function(){
+                $("#panel2").animate({left: '400px'});
+            });
+        });
+        </script>
+       
+<h2>জেকুয়েরি stop() মেথড</h2>
+<button id="stopa">Stop sliding</button>
+
+<div id="flipa">Click to slide down panel</div>
+<div id="panela">Hello world!</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flipa").click(function(){
+    $("#panela").slideDown(5000);
+  });
+  $("#stopa").click(function(){
+    $("#panela").stop();
+  });
+});
+</script>
+
+<style> 
+#panela, #flipa {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color:#0C7F00  ;
+  color: white;
+  border: solid 1px #666;
+  border-radius: 3px;
+}
+
+#panela {
+  padding: 50px;
+  display: none;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>জেকুয়েরি এইচটিএমএল </h1>
+<h2>jQuery - Get Content and Attributes</h2>
+
+<p id="test4">I am <b>FATIMARUNU</b> .</p>
+
+<button id="btn11">Show Text</button>
+<button id="btn21">Show HTML</button>
+
+<script>
+$(document).ready(function(){
+  $("#btn11").click(function(){
+    alert("Text: " + $("#test4").text());
+  });
+  $("#btn21").click(function(){
+    alert("HTML: " + $("#test4").html());
+  });
+  
+});
+</script>
+<h2>জেকুয়েরি - এইচটিএমএল কন্টেন্ট এবং এট্রিবিউট সেট/jQuery - Set Content and Attributes</h2>
+ <p class="paragraph1">আমার দেশ</p>
+  <p class="paragraph2">আমার জেলা</p>
+  <p>Name: <input type="text" value="আমার নাম"></p>
+  
+  <button id="btn-text">টেক্সট সেট করুন</button>
+  <button id="btn-html">এইচটিএমএল সেট করুন</button>
+  <button id="btn-input">ভ্যালু সেট করুন</button>
+ <script>
+  $(document).ready(function(){
+    $("#btn-text").click(function(){
+      $(".paragraph1").text(" বাংলাদেশ!");
+    });
+    $("#btn-html").click(function(){
+      $(".paragraph2").html("<b>খুলনা!!</b>");
+    });
+    $("#btn-input").click(function(){
+      $("input").val("FATIMA RUNU");
+    });
+  });
+  </script>
+
+<h2>জেকুয়েরি - নতুন এলিমেন্ট যুক্ত করা/jQuery - Add Elements</h2>
+<p id=p90>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<ol>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ol>
+
+<button id="btn12">Append text</button>
+<button id="btn22">Append list items</button>
+
+<script>
+$(document).ready(function(){
+  $("#btn12").click(function(){
+    $("#p90").append(" <b>Appended text</b>.");
+  });
+
+  $("#btn22").click(function(){
+    $("ol").append("<li>Appended item</li>");
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>জেকুয়েরি - এলিমেন্ট রিমুভ করা/jQuery - Remove Elements</h2>
+ <div id=pic4>
+    <img src="images/10.jpg" style="height:140px; width:140px;">
+    এগুলো div এলিমেন্টের মধ্যের ছবি।
+    <p> আমি ক্ষমা চাই সকল পাপ থেকে যা সম্পর্কে আমি সচেতন নই বা জানি না, আমি পুনরায় ঘোষণা করছি, আমি সকল প্রকার কুফর থেকে, শিরক থেকে, মিথ্যা (কথা বলা), গিবত (কারও অনুপস্থিতিতে পরনিন্দা), বিদাত, পরনিন্দা, অশ্লীলতা এবং অন্যান্য সকল পাপ থেকে মুক্ত। আমি ইসলাম স্বীকার এবং বিশ্বাস করি এবং ঘোষণা দিচ্ছি যে, আল্লাহ‌ ছাড়া কোন প্রভু নেই এবং মুহাম্মদ আল্লাহর প্রেরিত রাসুল।---এটি div এলিমেন্টের মধ্যের একটি প্যারাগ্রাফ।</p>
+  </div>
+  <br>
+  <button id=btn13>div এলিমেন্টটিকে রিমুভ করুন!</button>
+ <script>
+  $(document).ready(function(){
+    $("#btn13").click(function(){
+      $("#pic4").remove();
+    });
+  });
+  </script>
+<h1>jQuery -জেকুয়েরি সিএসএস ক্লাস Get এবং Set//// Get and Set CSS Classes</h1>
+<h2>জেকুয়েরি toggleClass() মেথড</h2>
+<h3>Heading 1</h3>
+<h4>Heading 2</h4>
+​
+<p class=p70>This is a paragraph.</p>
+<p class=p70>This is another paragraph.</p>
+​
+<button id=bt1>Toggle class</button>
+</script>
+<script>
+$(document).ready(function(){
+  $("#bt1").click(function(){
+    $("h3, h4, .p70").toggleClass("blue");
+  });
+});
+</script>
+<style>
+.blue {
+  color: blue;
+}
+</style>
+
+
+
+
+
+
+
+
+
+<h2></h2>
+
+   </div>
+<style>
+    .container{width: 80%;
+        margin: 0 auto;
+        text-align: center;
+       background-color: white;
+
+    }
+	h2{
+		background-color: blue;
+        color: white;
+	}
+</style>
+   </div>
+	</body>
+</html> 
