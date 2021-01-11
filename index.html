@@ -483,16 +483,35 @@ $(document).ready(function(){
   color: blue;
 }
 </style>
+<h2>জেকুয়েরি ডাইমেনশন মেথড</h2>
+ <div id="box11"></div>
+  <br>
+  <button id=btn40>div এর ডাইমেনশন</button>
+   </div>
+    <script>
+  $(document).ready(function(){
+    $("#btn40").click(function(){
+      var box = "";
+      box += "Width of div: " + $("#box11").width() + "</br>";
+      box += "Height of div: " + $("#box11").height();
+      $("#box11").html(box);
+    });
+  });
+  </script>
+  <style>
+  #box11 {
+    height: 150px;
+    width: 350px;
+    padding: 10px;
+    margin: 3px;
+    border: 1px solid red;
+    background-color: teal;
+    color: white;
+  }
+  </style>
 
 
 
-
-
-
-
-
-
-<h2></h2>
 
    </div>
 <style>
